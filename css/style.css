@@ -1048,3 +1048,253 @@ body {
         padding: 2rem 1.5rem;
     }
 }
+
+/* ========== 钩子 1:差异化区块 ========== */
+
+.differentiation-section {
+    padding: 80px 0;
+    background: #f8f9fb;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 48px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.diff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.diff-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 32px 24px;
+    border: 1px solid #eaeaea;
+    transition: all 0.3s ease;
+}
+
+.diff-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+}
+
+.diff-card-other {
+    background: #f0f0f0;
+    border-color: #ddd;
+}
+
+.diff-card-us {
+    border: 2px solid #2c5fff;
+    background: #ffffff;
+    position: relative;
+}
+
+.diff-card-us::before {
+    content: "推荐";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2c5fff;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.diff-num {
+    font-size: 36px;
+    font-weight: 800;
+    color: #2c5fff;
+    margin-bottom: 4px;
+}
+
+.diff-card-other .diff-num {
+    color: #999;
+}
+
+.diff-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.diff-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.diff-list li {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.diff-list li::before {
+    content: "● ";
+    color: #2c5fff;
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+.diff-bad {
+    color: #999 !important;
+}
+
+.diff-bad::before {
+    color: #999 !important;
+}
+
+.diff-conclusion {
+    font-size: 18px;
+    color: #1a1a1a;
+    margin-top: 32px;
+    padding: 24px;
+    background: #fffbea;
+    border-left: 4px solid #ffc107;
+    border-radius: 4px;
+}
+
+/* ========== 钩子 2:3 个场景区块 ========== */
+
+.scenarios-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.scenarios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.scenario-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 28px 24px;
+    border: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.scenario-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    border-color: #2c5fff;
+}
+
+.scenario-num {
+    display: inline-block;
+    background: #2c5fff;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    width: fit-content;
+}
+
+.scenario-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 12px 0;
+    line-height: 1.4;
+}
+
+.scenario-desc {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.scenario-root {
+    font-size: 13px;
+    color: #2c5fff;
+    font-weight: 600;
+    padding: 8px 12px;
+    background: #f0f5ff;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.scenario-link {
+    color: #2c5fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.scenario-link:hover {
+    text-decoration: underline;
+}
+
+.scenarios-tip {
+    font-size: 15px;
+    color: #666;
+    margin-top: 16px;
+}
+
+/* ========== 主按钮 ========== */
+
+.btn-primary {
+    display: inline-block;
+    background: #2c5fff;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #1a4ae0;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(44,95,255,0.3);
+}
+
+.btn-large {
+    padding: 18px 36px;
+    font-size: 16px;
+}
+
+.text-center { text-align: center; }
+
+/* ========== 响应式(手机端) ========== */
+
+@media (max-width: 768px) {
+    .diff-grid,
+    .scenarios-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-title {
+        font-size: 24px;
+    }
+}
