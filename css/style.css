@@ -1072,11 +1072,24 @@ body {
     animation: fadeInUp 0.8s ease-out 1s both;
 }
 
+/* ========== 新增：专家卡片简介 ========== */
+.team-summary {
+    font-size: 0.92rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-top: 0.75rem;
+    padding: 0.6rem 0;
+    border-top: 1px solid var(--bg);
+}
+
 /* ========== 响应式(手机端) ========== */
 
 @media (max-width: 768px) {
     .hero-trust {
         font-size: 0.78rem;
         padding: 0 1rem;
+    }
+    .team-summary {
+        font-size: 0.85rem;
     }
 }
