@@ -220,14 +220,15 @@ body {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-size: clamp(2rem, 5vw, 4.5rem);
     font-weight: 800;
     color: white;
     line-height: 1.15;
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
     animation: fadeInUp 0.8s ease-out 0.2s both;
-    white-space: nowrap;
+    word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 .hero-subtitle {
